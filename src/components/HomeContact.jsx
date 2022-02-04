@@ -1,5 +1,6 @@
 import React from "react";
 import BeGoodImg from "../images/beGood.png";
+import { Link } from "react-router-dom";
 
 function HomeContact() {
   return (
@@ -15,7 +16,9 @@ function HomeContact() {
           kolorystycznie. Dostępność cyfrowa to danie szansy wszystkim ludziom
           na to, aby na równych prawach korzystali z Internetu.
         </p>
-        <button>Kontakt</button>
+        <button>
+          <Link to="/kontakt">Kontakt</Link>
+        </button>
       </div>
       <div className="img">
         <img

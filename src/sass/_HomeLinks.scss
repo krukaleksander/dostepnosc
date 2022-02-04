@@ -43,6 +43,10 @@
       border: 2px solid white;
       margin-top: 30px;
       transition: 0.4s;
+      a {
+        color: white;
+        text-decoration: none;
+      }
       &:hover {
         background-color: white;
       }
@@ -55,7 +59,9 @@
     }
     button {
       &:hover {
-        color: #0f7398;
+        a {
+          color: #0f7398;
+        }
       }
     }
   }
@@ -66,7 +72,9 @@
     }
     button {
       &:hover {
-        color: #043863;
+        a {
+          color: #043863;
+        }
       }
     }
   }

@@ -218,6 +218,11 @@ body {
   transition: 0.4s;
 }
 
+.home-links__container button a {
+  color: white;
+  text-decoration: none;
+}
+
 .home-links__container button:hover {
   background-color: white;
 }
@@ -230,7 +235,7 @@ body {
   color: #0f7398;
 }
 
-.home-links__law button:hover {
+.home-links__law button:hover a {
   color: #0f7398;
 }
 
@@ -242,7 +247,7 @@ body {
   color: #043863;
 }
 
-.home-links__requirements button:hover {
+.home-links__requirements button:hover a {
   color: #043863;
 }
 
@@ -293,8 +298,16 @@ body {
   transition: 0.3s;
 }
 
+.home-contact button a {
+  text-decoration: none;
+  color: #003349;
+}
+
 .home-contact button:hover {
   background-color: transparent;
+}
+
+.home-contact button:hover a {
   color: White;
 }
 

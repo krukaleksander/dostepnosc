@@ -1,6 +1,7 @@
 import React from "react";
 import { GoLaw } from "react-icons/go";
 import { RiFilePaperLine } from "react-icons/ri";
+import { Link } from "react-router-dom";
 
 function HomeLinks() {
   return (
@@ -14,7 +15,9 @@ function HomeLinks() {
           We wrześniu 2021 roku weszły zmiany, które wiele zmieniają na tym
           polu.
         </h2>
-        <button>Czytaj więcej</button>
+        <button>
+          <Link to="/prawo">Czytaj więcej</Link>
+        </button>
       </div>
       <div className="home-links__requirements home-links__container">
         <div className="img">
@@ -24,7 +27,9 @@ function HomeLinks() {
         <h2>
           Wymogi zawarte są w standardzie WCAG 2.1, warto się z nim zapoznać.
         </h2>
-        <button>Czytaj więcej</button>
+        <button>
+          <Link to="/wymogi">Czytaj więcej</Link>
+        </button>
       </div>
     </div>
   );
