@@ -330,4 +330,36 @@ body {
 .home-need-help__wrapper h3 span {
   color: #8edd65;
 }
+
+footer {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: space-arround;
+      -ms-flex-pack: space-arround;
+          justify-content: space-arround;
+  gap: 30px;
+  padding: 10px 30px 10px 10px;
+}
+
+footer img {
+  max-width: 300px;
+}
+
+footer p {
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+  color: #0e3c60;
+}
 /*# sourceMappingURL=main.min.css.map */

@@ -1,0 +1,16 @@
+footer {
+  background-color: white;
+  @include flex;
+  flex-direction: row-reverse;
+  justify-content: space-arround;
+  gap: 30px;
+  padding: 10px 30px 10px 10px;
+  img {
+    max-width: 300px;
+  }
+  p {
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    color: #0e3c60;
+  }
+}
