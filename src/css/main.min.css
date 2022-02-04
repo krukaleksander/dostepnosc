@@ -82,6 +82,7 @@ body {
   gap: 50px;
   padding: 20px 20px 150px 20px;
   position: relative;
+  overflow: hidden;
 }
 
 .home-banner::after {
@@ -140,5 +141,108 @@ body {
 
 .home-banner img {
   max-width: 600px;
+}
+
+.home-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 50px;
+}
+
+.home-links__container {
+  height: 400px;
+  width: 500px;
+  border-radius: 10px;
+  padding: 50px;
+  color: white;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  z-index: 5;
+}
+
+.home-links__container:hover {
+  -webkit-transform: translateY(-0.625rem);
+          transform: translateY(-0.625rem);
+}
+
+.home-links__container:hover h1 {
+  text-decoration: underline;
+}
+
+.home-links__container .img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  padding: 20px;
+  background-color: white;
+  font-size: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.home-links__container h1 {
+  font-size: 2rem;
+}
+
+.home-links__container h2 {
+  font-size: 2rem;
+  font-weight: 100;
+  line-height: 150%;
+  margin-top: 10px;
+}
+
+.home-links__container button {
+  cursor: pointer;
+  background: transparent;
+  font-size: 2rem;
+  color: white;
+  padding: 10px;
+  border-radius: 30px;
+  border: 2px solid white;
+  margin-top: 30px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.home-links__container button:hover {
+  background-color: white;
+}
+
+.home-links__law {
+  background-color: #0f7398;
+}
+
+.home-links__law .img {
+  color: #0f7398;
+}
+
+.home-links__law button:hover {
+  color: #0f7398;
+}
+
+.home-links__requirements {
+  background-color: #043863;
+}
+
+.home-links__requirements .img {
+  color: #043863;
+}
+
+.home-links__requirements button:hover {
+  color: #043863;
 }
 /*# sourceMappingURL=main.min.css.map */
