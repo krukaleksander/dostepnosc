@@ -245,4 +245,55 @@ body {
 .home-links__requirements button:hover {
   color: #043863;
 }
+
+.home-contact {
+  margin-top: 40px;
+  background-color: #003349;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 50px;
+}
+
+.home-contact__text {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+}
+
+.home-contact__text h1 {
+  font-size: 3rem;
+  margin-bottom: 40px;
+}
+
+.home-contact__text p {
+  font-size: 2rem;
+  line-height: 150%;
+  letter-spacing: 2px;
+}
+
+.home-contact img {
+  max-width: 500px;
+}
+
+.home-contact button {
+  margin-top: 30px;
+  font-size: 2rem;
+  padding: 10px 50px;
+  border: 2px solid white;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.home-contact button:hover {
+  background-color: transparent;
+  color: White;
+}
 /*# sourceMappingURL=main.min.css.map */
