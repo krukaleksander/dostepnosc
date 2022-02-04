@@ -1,9 +1,10 @@
 import "normalize.css";
+import Menu from "./components/Menu";
 
 const App = () => {
   return (
     <div className="App">
-      <h1>Projekt dostępność cyfrowa</h1>
+      <Menu />
     </div>
   );
 };
