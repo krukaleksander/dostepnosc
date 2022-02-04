@@ -284,6 +284,7 @@ body {
 
 .home-contact button {
   margin-top: 30px;
+  margin-bottom: 20px;
   font-size: 2rem;
   padding: 10px 50px;
   border: 2px solid white;
@@ -295,5 +296,38 @@ body {
 .home-contact button:hover {
   background-color: transparent;
   color: White;
+}
+
+.home-need-help {
+  background-color: #182026;
+  color: white;
+  padding: 50px;
+}
+
+.home-need-help__wrapper {
+  max-width: 700px;
+  margin-left: 60px;
+}
+
+.home-need-help__wrapper h1 {
+  font-size: 4rem;
+  font-weight: 100;
+}
+
+.home-need-help__wrapper h2 {
+  font-size: 3rem;
+  font-weight: 400;
+  color: #8edd65;
+  margin: 20px 0;
+}
+
+.home-need-help__wrapper h3 {
+  font-size: 2rem;
+  letter-spacing: 2px;
+  line-height: 150%;
+}
+
+.home-need-help__wrapper h3 span {
+  color: #8edd65;
 }
 /*# sourceMappingURL=main.min.css.map */

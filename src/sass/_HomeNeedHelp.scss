@@ -1,0 +1,27 @@
+.home-need-help {
+  background-color: #182026;
+  color: white;
+  padding: 50px;
+  &__wrapper {
+    max-width: 700px;
+    margin-left: 60px;
+    h1 {
+      font-size: 4rem;
+      font-weight: 100;
+    }
+    h2 {
+      font-size: 3rem;
+      font-weight: 400;
+      color: $green;
+      margin: 20px 0;
+    }
+    h3 {
+      font-size: 2rem;
+      letter-spacing: 2px;
+      line-height: 150%;
+      span {
+        color: $green;
+      }
+    }
+  }
+}
