@@ -362,4 +362,317 @@ footer p {
   letter-spacing: 1px;
   color: #0e3c60;
 }
+
+.contact-form {
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  z-index: 9998;
+  background: #000000b0;
+}
+
+.form {
+  z-index: 9999;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 600px;
+  background-color: #007aff;
+  border: 2px solid white;
+  padding: 10px 70px;
+}
+
+@media (orientation: landscape) and (max-height: 590px) {
+  .form {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    top: 0;
+    bottom: 0;
+    -webkit-transform: translate(-50%, 0%);
+            transform: translate(-50%, 0%);
+  }
+}
+
+@media (max-width: 640px) {
+  .form {
+    width: 500px;
+  }
+}
+
+@media (max-width: 481px) {
+  .form {
+    width: 340px;
+    padding: 10px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 330px) {
+  .form {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    top: 0;
+    bottom: 0;
+    -webkit-transform: translate(-50%, 0%);
+            transform: translate(-50%, 0%);
+  }
+}
+
+.form span {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 3rem;
+  color: #cec0c0;
+  cursor: pointer;
+}
+
+.form span:hover {
+  color: white;
+}
+
+.form h2 {
+  text-align: center;
+  padding: 10px;
+  font-size: 2rem;
+  color: white;
+}
+
+@media (max-width: 640px) {
+  .form h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 481px) {
+  .form h2 {
+    font-size: 1.5rem;
+  }
+}
+
+.form input {
+  color: #414147;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 0.0625rem solid #d9dde1;
+  background-color: #fff;
+  display: block;
+  font-size: 2rem;
+  font-weight: 400;
+  padding: 0.625rem 2rem;
+  line-height: 1.5;
+  -webkit-transition: border 0.2s ease;
+  transition: border 0.2s ease;
+  width: 100%;
+  min-height: 3.25rem;
+  letter-spacing: 0.14px;
+  outline: none;
+  border-radius: 0.3125rem;
+  margin-top: 10px;
+}
+
+@media (max-width: 640px) {
+  .form input {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 481px) {
+  .form input {
+    padding: 10px;
+    width: 300px;
+    margin: 5px auto;
+  }
+}
+
+.form textarea {
+  color: #414147;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 0.0625rem solid #d9dde1;
+  background-color: #fff;
+  display: block;
+  font-size: 2rem;
+  font-family: Geometria, sans-serif;
+  font-weight: 400;
+  padding: 0.625rem 2rem;
+  line-height: 1.5;
+  -webkit-transition: border 0.2s ease;
+  transition: border 0.2s ease;
+  width: 100%;
+  min-height: 3.25rem;
+  letter-spacing: 0.14px;
+  outline: none;
+  margin: 10px 0;
+  border-radius: 0.3125rem;
+}
+
+@media (max-width: 481px) {
+  .form textarea {
+    width: 300px;
+    margin: 5px auto;
+  }
+}
+
+.form button {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 3.125rem;
+  padding: 0.55556em 1.66667em;
+  vertical-align: middle;
+  border-radius: 1.5625rem;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1;
+  color: #414147;
+  text-decoration: none;
+  text-align: center;
+  background-color: #fff;
+  border: 1px solid #0dacae;
+  border-top-color: #0dacae;
+  border-right-color: #0dacae;
+  border-bottom-color: #0dacae;
+  border-left-color: #0dacae;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none;
+  cursor: pointer;
+  margin: 10px 0;
+  -webkit-transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.form button:hover {
+  background-color: #0dacae;
+  color: #fff;
+}
+
+@media (max-width: 481px) {
+  .form button {
+    width: 150px;
+    margin: 5px auto;
+  }
+}
+
+.form h4 {
+  padding: 10px;
+  font-size: 1.8rem;
+  color: white;
+}
+
+.form p {
+  max-width: 90%;
+  margin: 10px auto;
+  font-size: 2rem;
+  text-align: center;
+  color: white;
+}
+
+.form .rdtPicker {
+  color: #141313;
+}
+
+.form .rdtPrev span,
+.form .rdtNext span {
+  position: static;
+  color: #2c41a1;
+}
+
+.form .rdtCounters {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form .rdtCounters .rdtCounter {
+  height: unset;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.form .rdtCounters .rdtCounter .rdtBtn {
+  position: static;
+  color: #2c41a1;
+}
+
+.sending__info {
+  text-align: center;
+}
+
+.sending__ring {
+  width: 10px;
+  height: 10px;
+  margin: 0 auto;
+  padding: 10px;
+  border: 7px dashed #4b9cdb;
+  border-radius: 100%;
+  -webkit-animation: loadingD 1.5s 0.3s cubic-bezier(0.17, 0.37, 0.43, 0.67) infinite;
+          animation: loadingD 1.5s 0.3s cubic-bezier(0.17, 0.37, 0.43, 0.67) infinite;
+}
+
+@-webkit-keyframes loadingD {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes loadingD {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
 /*# sourceMappingURL=main.min.css.map */
