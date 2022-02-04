@@ -1,4 +1,5 @@
 import "normalize.css";
+import "./css/main.min.css";
 import Menu from "./components/Menu";
 import Footer from "./components/Footer";
 

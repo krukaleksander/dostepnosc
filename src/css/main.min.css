@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+#root {
+  overflow: hidden;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: white;
+  color: #003349;
+}
+
+.navigation-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 50px;
+}
+
+.navigation-wrapper img {
+  max-width: 300px;
+}
+
+.navigation-wrapper .navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+  list-style: none;
+}
+
+.navigation-wrapper .navigation li {
+  color: #333;
+  font-size: 2rem;
+}
+
+.navigation-wrapper .navigation li a {
+  text-decoration: none;
+}
+
+.navigation-wrapper .navigation li a:visited {
+  color: #333;
+}
+
+.home-banner {
+  background-color: #007aff;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 50px;
+  padding: 20px 20px 150px 20px;
+  position: relative;
+}
+
+.home-banner::after {
+  content: "";
+  background: #fff;
+  height: 60%;
+  border-radius: 100% 100% 0 0 / 100% 100%;
+  position: absolute;
+  bottom: -45%;
+  padding: 1%;
+  right: 0;
+  left: -25%;
+  width: 150%;
+  overflow: hidden;
+  z-index: 5;
+  margin-top: 75px;
+  margin-top: 7.5rem;
+}
+
+.home-banner .home-banner__text {
+  padding: 10px;
+  max-width: 30%;
+}
+
+.home-banner .home-banner__text h1 {
+  font-size: 4rem;
+  font-weight: 100;
+  line-height: 120%;
+}
+
+.home-banner .home-banner__text h2 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  line-height: 140%;
+}
+
+.home-banner .home-banner__text button {
+  margin-top: 20px;
+  background-color: #007aff;
+  border: 2px solid white;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.home-banner .home-banner__text button:hover {
+  background-color: white;
+  color: #333;
+}
+
+.home-banner img {
+  max-width: 600px;
+}
+/*# sourceMappingURL=main.min.css.map */

@@ -1,0 +1,23 @@
+.navigation-wrapper {
+  @include flex;
+  justify-content: flex-start;
+  gap: 50px;
+  img {
+    max-width: 300px;
+  }
+  .navigation {
+    @include flex;
+    gap: 30px;
+    list-style: none;
+    li {
+      color: $gray;
+      font-size: 2rem;
+      a {
+        text-decoration: none;
+        &:visited {
+          color: $gray;
+        }
+      }
+    }
+  }
+}
