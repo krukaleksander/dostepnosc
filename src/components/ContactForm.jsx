@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { CgClose } from "react-icons/cg";
 import "react-datetime/css/react-datetime.css";
 import Datetime from "react-datetime";
@@ -7,33 +6,28 @@ import "moment/locale/pl";
 import { useGlobalContext } from "../Context";
 
 const ContactForm = () => {
-  const { closeContactForm } = useGlobalContext();
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [phone, setPhone] = useState("");
-  const [date, setDate] = useState("");
-  const [message, setMessage] = useState("");
-  const [error, setError] = useState(false);
-  const [info, setInfo] = useState("");
-  const [sending, setSending] = useState(false);
+  const {
+    closeContactForm,
+    name,
+    setName,
+    email,
+    setEmail,
+    phone,
+    setPhone,
+    date,
+    setDate,
+    message,
+    setMessage,
+    error,
+    setError,
+    info,
+    setInfo,
+    sending,
+    setSending,
+    cleanFn,
+    validateFn,
+  } = useGlobalContext();
 
-  const cleanFn = () => {
-    setName("");
-    setEmail("");
-    setPhone("");
-    setDate("");
-    setMessage("");
-    setError("");
-  };
-  const validateFn = () => {
-    if (name.length < 1) {
-      return setError("Jak masz na imię?");
-    } else if (phone.length < 9) {
-      return setError("Telefon jest za krótki");
-    } else if (message.length < 1) {
-      return setError("Podaj treść wiadomości");
-    } else return true;
-  };
   const handleSetMessage = () => {
     if (validateFn()) {
       setSending(true);
