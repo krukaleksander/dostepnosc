@@ -102,25 +102,25 @@ body {
   margin-top: 7.5rem;
 }
 
-.home-banner .home-banner__text {
+.home-banner .text {
   padding: 10px;
   max-width: 30%;
 }
 
-.home-banner .home-banner__text h1 {
+.home-banner .text h1 {
   font-size: 4rem;
   font-weight: 100;
   line-height: 120%;
 }
 
-.home-banner .home-banner__text h2 {
+.home-banner .text h2 {
   font-size: 2.5rem;
   font-weight: 400;
   letter-spacing: 2px;
   line-height: 140%;
 }
 
-.home-banner .home-banner__text button {
+.home-banner .text button {
   margin-top: 20px;
   background-color: #007aff;
   border: 2px solid white;
@@ -134,7 +134,7 @@ body {
   transition: 0.3s;
 }
 
-.home-banner .home-banner__text button:hover {
+.home-banner .text button:hover {
   background-color: white;
   color: #333;
 }
@@ -687,5 +687,81 @@ footer p {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
   }
+}
+
+.banner {
+  background-color: #007aff;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 50px;
+  padding: 20px 20px 150px 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.banner::after {
+  content: "";
+  background: #fff;
+  height: 60%;
+  border-radius: 100% 100% 0 0 / 100% 100%;
+  position: absolute;
+  bottom: -45%;
+  padding: 1%;
+  right: 0;
+  left: -25%;
+  width: 150%;
+  overflow: hidden;
+  z-index: 5;
+  margin-top: 75px;
+  margin-top: 7.5rem;
+}
+
+.banner .text {
+  padding: 10px;
+  max-width: 30%;
+}
+
+.banner .text h1 {
+  font-size: 4rem;
+  font-weight: 100;
+  line-height: 120%;
+}
+
+.banner .text h2 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  line-height: 140%;
+}
+
+.banner .text button {
+  margin-top: 20px;
+  background-color: #007aff;
+  border: 2px solid white;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.banner .text button:hover {
+  background-color: white;
+  color: #333;
+}
+
+.banner img {
+  max-width: 600px;
 }
 /*# sourceMappingURL=main.min.css.map */
