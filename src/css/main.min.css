@@ -693,4 +693,34 @@ footer p {
             transform: rotate(360deg);
   }
 }
+
+.law__act {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 50px;
+}
+
+.law__act .text {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+}
+
+.law__act .text h1 {
+  font-size: 3rem;
+  color: #007aff;
+  line-height: 150%;
+}
+
+.law__act .text p {
+  font-size: 2rem;
+  letter-spacing: 1px;
+  line-height: 130%;
+}
 /*# sourceMappingURL=main.min.css.map */

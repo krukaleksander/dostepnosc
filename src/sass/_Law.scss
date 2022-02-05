@@ -1,0 +1,19 @@
+.law {
+  &__act {
+    @include flex;
+    gap: 50px;
+    .text {
+      flex-basis: 30%;
+      h1 {
+        font-size: 3rem;
+        color: $blue;
+        line-height: 150%;
+      }
+      p {
+        font-size: 2rem;
+        letter-spacing: 1px;
+        line-height: 130%;
+      }
+    }
+  }
+}
